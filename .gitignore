@@ -1,0 +1,37 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Virtual environments
+venv/
+.venv/
+env/
+
+# IDE / editor
+.vscode/
+.idea/
+*.swp
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Generated artifacts
+outputs/
+charts/
+
+# Large data files (regenerable via generate_dummy_data.py)
+*.npz
+
+# Environment / secrets
+.env
+.env.*
+!.env.example
+
+# Claude Code per-machine settings
+.claude/settings.local.json
