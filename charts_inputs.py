@@ -109,7 +109,8 @@ def run():
         fmt(ax,unit,title,zero)
 
     plt.tight_layout(rect=[0,0,1,0.97])
-    tmp='/tmp/chart_inputs.png'
+    os.makedirs(os.path.join(CHART_DIR,'tmp'),exist_ok=True)
+    tmp=os.path.join(CHART_DIR,'tmp','chart_inputs.png')
     plt.savefig(tmp,dpi=150,bbox_inches='tight',facecolor='white')
     plt.close()
     dest=os.path.join(CHART_DIR,'chart_inputs_new.png')
